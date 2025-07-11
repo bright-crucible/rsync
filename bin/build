@@ -1,11 +1,11 @@
 #!/usr/bin/env bash
-if [ ! -d config/ssh ]; then
+if [ ! -d "${PWD}/config/ssh" ]; then
     mkdir -p config/ssh
     chmod 700 config/ssh
     touch config/ssh/authorized_keys
     chmod 600 config/ssh/authorized_keys
 fi
-if [ ! -d data/data ]; then
+if [ ! -d "${PWD}/data/data" ]; then
     mkdir -p data/data
 fi
 if [ ! -d "${PWD}/rsync/keys" ]; then
