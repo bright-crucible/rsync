@@ -1,4 +1,4 @@
-.PHONY: backup build logs start stop status shell tail
+.PHONY: build logs start stop status shell tail
 
 help:
 	@echo "rsync in a container!"

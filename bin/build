@@ -1,15 +1,14 @@
 #!/usr/bin/env bash
-if [ ! -d "${PWD}/config/ssh" ]; then
+if [ ! -d "config/ssh" ]; then
     mkdir -p config/ssh
     chmod 700 config/ssh
     touch config/ssh/authorized_keys
     chmod 600 config/ssh/authorized_keys
 fi
-if [ ! -d "${PWD}/data/data" ]; then
+if [ ! -d "data/data" ]; then
     mkdir -p data/data
 fi
-if [ ! -d "${PWD}/rsync/keys" ]; then
-    echo "dir does not exist"
+if [ ! -d "rsync/keys" ]; then
     mkdir -p rsync/keys
     for type in rsa ecdsa ed25519; do
         ssh-keygen -t ${type} -N "" -f rsync/keys/ssh_host_${type}_key
