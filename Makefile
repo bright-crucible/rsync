@@ -1,7 +1,7 @@
-.PHONY: backup build logs start stop status sabshell sonshell radshell lidshell hydrashell tail
+.PHONY: backup build logs start stop status shell tail
 
 help:
-	@echo "SABnzbd and Sonarr in containers!"
+	@echo "rsync in a container!"
 	@echo ""
 	@echo "Commands:"
 	@echo ""
