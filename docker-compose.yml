@@ -1,0 +1,11 @@
+---
+services:
+    rsync:
+        build: rsync
+        image: rsync/rsync
+        restart: unless-stopped
+        volumes:
+            - $PWD/data/data:/home/rsync/data
+            - $PWD/config/ssh:/home/rsync/.ssh
+        ports:
+            - "22022:22022/tcp"
