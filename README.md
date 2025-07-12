@@ -19,3 +19,6 @@ Copy the pubkey data into `config/ssh/authorized_keys`. The `config/ssh` folder 
 
 ## Client-side sending
 Data can be copied to `/home/rsync/data`. On the host side this corresponds to `data/data`.
+
+## Stopping the container
+Issue `make stop` to shut down the container.
